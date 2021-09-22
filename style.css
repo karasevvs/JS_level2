@@ -1,0 +1,39 @@
+* {border:0; padding: 0; margin: 0;}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: 1px solid black;
+}
+
+.cart-button {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px 15px;
+}
+
+.cart-button:hover {
+  background: green;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+.goods-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+.goods-item {
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px 15px;
+}
+
+.goods-item:hover {
+  border: 3px solid green;
+  cursor: pointer;
+}
