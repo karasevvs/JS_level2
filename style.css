@@ -1,0 +1,88 @@
+* {border:0; padding: 0; margin: 0;}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: 1px solid black;
+}
+
+.cart-button {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px 15px;
+}
+
+.cart-button:hover {
+  background: green;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+.goods-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+.goods-item {
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px 15px;
+}
+
+.goods-item:hover {
+  border: 3px solid green;
+  cursor:pointer;
+}
+
+.catalog-header{
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  background: green;
+}
+
+.basket-header{
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  background: grey;
+}
+
+.form-regular {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form_to_send {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  background: gray;
+}
+
+.form_to_send input {
+  height: 30px;
+  padding: 5px 5px;
+}
+
+.form_to_send label {
+  height: 25px;
+  margin: 10px 5px;
+}
+
+.form_to_send button {
+  align-self: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 10px;
+}
