@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>eShop</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <input type="text" class="goods-search" />
+        <button type="button" class="search-button">Искать</button>
+        <button class="cart-button" type="button">Корзина</button>
+    </header>
+    <main>
+        <div class="catalog-header">Каталог</div>
+        <div class="goods-list"></div>
+        <div class="basket-header">Корзина</div>
+        <div class="basket-list"></div>
+        <div class="result">
+            <div class="basket-price"></div>
+            <div class="basket-count"></div>
+        </div>
+        <div class="long_text"></div>
+        <div class="form-regular">
+            <form action="#" class="form_to_send">
+                <label for="name">Имя: </label>
+                <input type="text" name="name" placeholder="Вадим" required>
+                <label for="phone">Телефон: </label>
+                <input type="tel" name="phone" placeholder="+7(XXX)-XXX-XXXX" required>
+                <label for="email">Email: </label>
+                <input type="email" name="email" placeholder="mycoolemail@google.com" required>
+                <label for="justText">Дополнительно: </label>
+                <textarea name="justText" id="areaForFeedback" cols="30" rows="10"></textarea>
+                <button type="submit" value="Отправить">Отправить</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
