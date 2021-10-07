@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eShop</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <input type="text" class="goods-search" v-model="searchLine">
+            <button class="search-button" type="button" @click="filterGoods()">Искать</button>
+            <button class="cart-button" type="button">Корзина</button>
+            <button class="close-cart" type="button" @click='isVisibleCart = !isVisibleCart'>Скрыть\Показать
+                корзину</button>
+        </header>
+        <main>
+            <h2 class="catalog-header">Каталог</h2>
+            <div class="goods-list">
+                <div class="goods-item" v-for="good in filteredGoods">
+                    <h3>{{ good.product_name }}</h3>
+                    <p>{{ good.price }}</p>
+                </div>
+            </div>
+            <h2 class="basket-header">Корзина</h2>
+            <div class="basket-list" v-if="goods.length !== 0">
+                <h1 v-else>Нет данных</h1>
+                <div class="goods-item" v-for="good in filteredGoods" v-if="isVisibleCart">
+                    <h3>{{ good.product_name }}</h3>
+                    <p>{{ good.price }}</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
