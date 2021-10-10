@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eShop</title>
+</head>
+
+<body>
+    <div id="app">
+        <fetch-error v-if='fetchError'></fetch-error>
+        <header>
+            <search-field type="text" class="goods-search" v-model="searchLine" id="searchInput"></search-field>
+            <button class="search-button" type="button" @click="filterGoods">Искать</button>
+            <button class="close-cart" type="button"
+                @click='isVisibleCart = !isVisibleCart; fetchGoodsCart()'>Скрыть\Показать корзину</button>
+        </header>
+        <main>
+            <h2 class="catalog-header">Каталог</h2>
+            <goods-list :goods="filteredGoods"></goods-list>
+            <basket :cart-goods='cartGoods' v-if="isVisibleCart"></basket>
+        </main>
+    </div>
+</body>
+
+</html>
